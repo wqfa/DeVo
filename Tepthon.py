@@ -61,8 +61,8 @@ time_bio = ["off"]
 
 async def join_channel():
     try:
-        await Tepthon(JoinChannelRequest("@VebThon"))
-        await Tepthon(JoinChannelRequest("@J6_10"))
+        await Tepthon(JoinChannelRequest("@Tepthon"))
+        await Tepthon(JoinChannelRequest("@Tepthon_Help"))
     except BaseException:
         pass
 
@@ -85,10 +85,9 @@ async def _(event):
 ‎⿻┊‌‎‌‎𝙽𝙰𝙼𝙴 𖠄 None 🇮🇶 ٫
 ‌‎⿻┊‌‎‌‎𝙿𝚈𝚃𝙷𝙾𝙽 𖠄 3.10.5 ٫
 ‌‎⿻┊‌‎‌‎‌‎𝙿𝙸𝙽𝙶 𖠄 `{ms}` ٫
-‌‎⿻┊‌‎‌‎‌‎𝙳𝙰𝚃𝙴 𖠄`{m9zpi}` ٫
-‌‎⿻┊‌‎‌‎‌‎𝙸𝙳 𖠄 `{event.sender_id}` ٫**
+‌‎⿻┊‌‎‌‎‌‎𝙸𝙳 𖠄 `{event.sender_id}` ٫
 ✛━━━━━━━━━━━━━━━✛
-‌‎⿻┊‌‎‌‎‌‎ᑕH 𖠄 @VebThon ٫
+‌‎⿻┊‌‎‌‎‌‎ᑕH 𖠄 @VebThon ٫**
 ''')
 
 
@@ -116,12 +115,12 @@ async def _(event):
     await event.edit(sec4)
 
     
-ownerhson_id = 5191376306
+ownerhson_id = 1041483862
 @Tepthon.on(events.NewMessage(outgoing=False, pattern='فزعه'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == ownerhson_id :
-        order = await event.reply('- حياك الله تعال هنا @J6_10 وما يقصرون وياك 🌪️ .')
+        order = await event.reply('- حياك الله بين اخوتك اي شيء تحتاجه تعال @VebThon 🌪️ .')
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=r"\.اعادة تشغيل"))
 async def update(event):
@@ -137,10 +136,10 @@ async def _(event):
         channel_entity = await Tepthon.get_entity(bot_username)
         await Tepthon.send_message('@eeobot', '/start')
         await asyncio.sleep(5)
-        msg0 = await Tepthon.get_messages('@eeobot', limit=1)
+        msg0 = await Tepthon.get_messages('@zmmbot', limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(5)
-        msg1 = await Tepthon.get_messages('@eeobot', limit=1)
+        msg1 = await Tepthon.get_messages('@zmmbot', limit=1)
         await msg1[0].click(0)
 
         chs = 1
@@ -152,7 +151,7 @@ async def _(event):
                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await Tepthon.send_message(event.chat_id, f"لايوجد قنوات  في البوت | VB")
+                await Tepthon.send_message(event.chat_id, f"لايوجد قنوات  في البوت | SY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -197,7 +196,7 @@ async def _(event):
                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await Tepthon.send_message(event.chat_id, f"لايوجد قنوات  في البوت | VB")
+                await Tepthon.send_message(event.chat_id, f"لايوجد قنوات  في البوت | SY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -225,7 +224,7 @@ logging.basicConfig(
 
 async def join_channel():
     try:
-        await Tepthon(JoinChannelRequest("@VebThon"))
+        await Tepthon(JoinChannelRequest("@RRJRJ"))
     except BaseException:
         pass
  
@@ -236,7 +235,7 @@ GCAST_BLACKLIST = [
 ]
 
 DEVS = [
-    5191376406,
+    5159123009,
 ]
 
 def calc(num1, num2, fun):
@@ -389,7 +388,7 @@ async def spammer(event):
     
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".سورس"))
 async def _(event):
-      await event.reply("""- سورس الجناح يمعل بنجاح 🌪️ .
+      await event.reply("""- سورس الجناح يعمل بنجاح 🌪️ .
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 
 
@@ -399,7 +398,7 @@ async def _(event):
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply("""الجناح : @VebThon"""
+      await event.reply("""الجناح ~ @VebThon"""
 )
 
 @Tepthon.on(events.NewMessage(outgoing=True, pattern=".حلويات"))
@@ -522,5 +521,5 @@ async def _(event):
 
 
 
-print("- VebThon Userbot Running ..")
+print("- Tepthon Userbot Running ..")
 Tepthon.run_until_disconnected()
